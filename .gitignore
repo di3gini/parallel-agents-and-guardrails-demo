@@ -1,0 +1,7 @@
+# Artefactos de cada corrida del orquestador (JSON crudos, timings, respaldos).
+# Los reportes en sí (security.md, performance.md, quality.md, summary.md,
+# guardrail-log.md) sí se versionan: son el resultado de la demo.
+reports/.run/
+
+# Estado local de la sesion de Claude Code (contiene un session id).
+.claude/scheduled_tasks.lock
