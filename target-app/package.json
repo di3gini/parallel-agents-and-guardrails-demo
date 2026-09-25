@@ -1,0 +1,17 @@
+{
+  "name": "target-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo app with intentional issues for a multi-agent code review demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
+    "lodash": "4.17.4"
+  }
+}
