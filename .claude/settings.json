@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(snyk *)",
+      "Write(reports/*)"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(sudo *)",
+      "Bash(mkfs*)",
+      "Bash(dd if=*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(chmod -R 777*)",
+      "Bash(curl *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/hooks/guard-bash.js\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/hooks/guard-write.js\""
+          }
+        ]
+      }
+    ]
+  }
+}
