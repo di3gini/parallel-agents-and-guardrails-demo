@@ -1,9 +1,8 @@
 # Agent Swarm & Guardrails
 
-Demo en vivo para la charla **"Agentes de IA: Arquitectura, Integración y
-Automatización en Sistemas Modernos"** (70 min, audiencia de desarrolladores).
 
-Muestra el ciclo completo de un sistema multi-agente real, sin humo:
+
+Muestra el ciclo completo de un sistema multi-agente real: 
 
 1. Una app objetivo con problemas plantados a propósito.
 2. Tres agentes especializados que la analizan **en paralelo** (uno usa Snyk
